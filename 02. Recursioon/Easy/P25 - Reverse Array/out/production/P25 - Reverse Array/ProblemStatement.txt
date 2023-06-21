@@ -1,0 +1,11 @@
+Problem Statement:
+Given an sorted/unsorted array of integers, reverse the array using recursion.
+
+Example 1:
+Input = {5, 1, 0, 2}
+Output = {0, 1, 2, 5}
+
+Example 2:
+Input = {5, 4, 3, 2, 1}
+Output = {1, 2, 3, 4, 5}
+
