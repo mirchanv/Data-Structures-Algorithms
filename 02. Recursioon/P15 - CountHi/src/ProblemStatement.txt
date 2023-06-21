@@ -1,8 +1,0 @@
-Problem Statement:
-Given a string, compute recursively (no loops) the number of times lowercase "hi"
-appears in the string.
-
-Examples:
-countHi("xxhixx") → 1
-countHi("xhixhix") → 2
-countHi("hi") → 1
