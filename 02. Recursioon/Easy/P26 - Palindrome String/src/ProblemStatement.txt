@@ -1,0 +1,28 @@
+Problem Statement:
+Given a string, find out if the string is palindromic using recursion. A String is said
+to be palindromic if and only if it is the same from left to right and from right to
+left.
+
+For Example 1:
+Input = RADAR
+Output = true
+Explanation:
+    -> If we spell out or read out input from left-right we get RADAR
+    -> If we spell out or read out input from right-left we get RADAR
+    -> they are same, hence this is palindrome
+
+For Example 2:
+Input = MADAM
+Output = true
+Explanation:
+    -> If we spell out or read out input from left-right we get MADAM
+    -> If we spell out or read out input from right-left we get MADAM
+    -> they are same, hence this is palindrome
+
+For Example 3:
+Input = BULB
+Output = true
+Explanation:
+    -> If we spell out or read out input from left-right we get BULB
+    -> If we spell out or read out input from right-left we get BLUB
+    -> they are different, hence this is NOT a palindrome
