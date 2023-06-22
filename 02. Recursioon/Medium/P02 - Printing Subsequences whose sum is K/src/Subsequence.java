@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class Subsequence {
 
     public static void printSubsequence(int[] arr, int index, int k, ArrayList<Integer> ans, int sum) {
-        // System.out.println("ps(arr," + index + ", " + k + ", " + ans + ", " + sum);
         if (index <= arr.length && sum == k) {
             System.out.println("-> " + ans);
             return;
