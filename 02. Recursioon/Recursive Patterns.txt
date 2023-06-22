@@ -1,0 +1,16 @@
+1. Recursive Pattern: to print all combinations, where you can pick the each element atmost once!
+  - Idea here is simple, for each element we two options, either we pick the element or do not pick it
+
+  - If we decide to pick the element, then:
+      - Add the element to another data structure such as ArrayList
+      - Now recusrively call the function again with next index
+  
+  - If we decide not to pick the element, then:
+      - Remove last element from the ArrayList (because we picked it, so if we do not want to pick it remove it first)
+      - Now recursively call the function again with next index
+
+2. Recursive Pattern: to print any one combination
+  
+                                                
+                                      
+  
