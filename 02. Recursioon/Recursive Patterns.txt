@@ -29,7 +29,30 @@ BASE CASE:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 2. Recursive Pattern: to print any one combination
+  - Idea here is simple again, for each element we two options, either we pick the element or do not pick it. But as soon as we find a comobination, or find
+    a combination whose sum is equal to target then we simply return true as we found the first combination and don't need to look further.
+
+  - We only decide to pick the element if(arr[index] <= target)
+    If condition is satisfied then we habe option to pick this element. We will wrap our recursive call around an if-statement, as mentioned if the recursive 
+    function return true then return true,  and thats it! NOTE: When making the recursive call the tsrget passed will be target-arr[index] as we are picking the
+    element!
   
+  - If we decide we cannot pick the element or the above returned false, then: 
+      - Remove last element from the ArrayList (because we picked it, so if we do not want to pick it remove it first)
+  
+  - Now we return recursive call of the  no pick function again with next index, and same target as we are not picking so target remains same!
+
+
+BASE CASE: 
+==========
+
+    if (index <= arr.length) {
+        if (target == 0) {
+          System.out.println("-> " + list);
+          return true;
+        }
+        return false;
+    } else if (index > arr.length)
+      return false;
                                                 
-                                      
-  
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
