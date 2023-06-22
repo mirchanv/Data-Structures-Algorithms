@@ -9,6 +9,25 @@
       - Remove last element from the ArrayList (because we picked it, so if we do not want to pick it remove it first)
       - Now recursively call the function again with next index
 
+BASE CASE: 
+==========
+
+    1. If we just have to print all combinations then base case would be: 
+      if (index == arr.length) {
+          // DO SOMETHING
+          return;
+      }
+    
+    2. If we have to print all combinations whose sum add upto to a target value then the base case would be:
+      if (index == arr.length) {
+        if (target == 0) {
+            // DO SOMETHING
+        }
+        return;
+      }
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 2. Recursive Pattern: to print any one combination
   
                                                 
