@@ -8,8 +8,11 @@ public class Test {
 
         System.out.println("Original Array : " + Arrays.toString(arr));
         System.out.println("All subsequences whose sum is k are : ");
-        Subsequence.printAnyOneSubsequence(arr, 0, k, new ArrayList<>(), 0);
+        Subsequence.printSubsequence(arr, 0, k, new ArrayList<>());
 
-        System.out.println("Count of all subsequence is : " + Subsequence.countAllSubsequences(arr, 0, k, 0));
+        System.out.println("Printing any one subsequence : ");
+        Subsequence.printAnyOneSubsequence(arr, 0, k, new ArrayList<>());
+
+        System.out.println("Count of all subsequence is : " + Subsequence.countAllSubsequences(arr, 0, k));
     }
 }
