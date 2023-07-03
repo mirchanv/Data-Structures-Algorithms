@@ -20,7 +20,7 @@ Approach to solve the problem using recursion & backtracking:
 ![image](https://github.com/mirchanv/Data-Structures-Algorithms/assets/137283854/f9aa4d24-805c-4be4-bd82-da7833f059b5)
 ![image](https://github.com/mirchanv/Data-Structures-Algorithms/assets/137283854/565f8335-0358-4807-90ab-e1eaa1c79e59)
 
-For checking if we can place a queen safely on the chessboard we will use hashing tecnique as shown below:
+For checking if we can place a queen safely on the chessboard we will use hashing technique as shown below:
 
 For checking Left row elements
 ![image](https://github.com/mirchanv/Data-Structures-Algorithms/assets/137283854/a8fe5892-6c9f-4a4f-96cc-9b0fea0ccda5)
