@@ -30,6 +30,7 @@ For checking upper diagonal and lower diagonal
 
 
 Time Complexity: Exponential in nature since we are trying out all ways, to be precise it is O(N! * N).
+
 Space Complexity: O(N)
 
 
