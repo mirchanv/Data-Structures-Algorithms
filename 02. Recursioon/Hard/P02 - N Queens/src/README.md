@@ -7,9 +7,9 @@ the n -queens puzzle. Each solution contains a distinct boards configuration of 
 
 Examples:
 
-Input: n = 4
-Output: [[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
-Explanation: There exist two distinct solutions to the 4-queens puzzle as shown below:
+    Input: n = 4
+    Output: [[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
+    Explanation: There exist two distinct solutions to the 4-queens puzzle as shown below:
 ![image](https://github.com/mirchanv/Data-Structures-Algorithms/assets/137283854/3e712e6c-d978-4682-8eff-4454a51de010)
 
 Let us first understand how can we place queens in a chessboard so that no attack on either of them can take place.
