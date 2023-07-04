@@ -3,6 +3,8 @@ Problem Statement:
 Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
 A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
 
+*** Leetcode problem no: 17 - Letter Combinations of a Phone Number
+
 ![image](https://github.com/mirchanv/Data-Structures-Algorithms/assets/137283854/ff9ba4eb-8b3d-4bb7-aaca-f0f545a3cc78)
 
 Example 1:
