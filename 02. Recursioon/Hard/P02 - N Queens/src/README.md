@@ -30,9 +30,8 @@ For checking upper diagonal and lower diagonal
 ![image](https://github.com/mirchanv/Data-Structures-Algorithms/assets/137283854/8eeb9008-c589-434f-b386-73f03cc270a6)
 
 
-Time Complexity: Exponential in nature since we are trying out all ways, to be precise it is O(N! * N).
-
-Space Complexity: O(N)
+        Time Complexity: Exponential in nature since we are trying out all ways, to be precise it is O(N! * N).
+        Space Complexity: O(N)
 
 
 
