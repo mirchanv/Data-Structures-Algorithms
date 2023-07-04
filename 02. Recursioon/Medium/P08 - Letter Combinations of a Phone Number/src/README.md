@@ -6,14 +6,20 @@ A mapping of digits to letters (just like on the telephone buttons) is given bel
 ![image](https://github.com/mirchanv/Data-Structures-Algorithms/assets/137283854/ff9ba4eb-8b3d-4bb7-aaca-f0f545a3cc78)
 
 Example 1:
-Input: digits = "23"
-Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+
+    Input: digits = "23"
+        
+    Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
 
 Example 2:
-Input: digits = ""
-Output: []
+
+    Input: digits = ""
+  
+    Output: []
 
 Example 3:
-Input: digits = "2"
-Output: ["a","b","c"]
+
+    Input: digits = "2"
+    
+    Output: ["a","b","c"]
 
