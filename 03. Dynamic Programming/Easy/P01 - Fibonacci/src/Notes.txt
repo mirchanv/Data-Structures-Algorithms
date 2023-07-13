@@ -1,0 +1,8 @@
+Memoization:
+we tend to store the value of the sub-problems in some map/table/data structure, and if
+that sub-problem is overlapping then we just return/reuse the previously stored value.
+Instead of calculating it again.
+
+Tabulation:
+the direction of solving the problem is that we try to go from the base case to the
+required answer!
