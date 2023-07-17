@@ -5,12 +5,14 @@ public class ClimbStairs_Recursion {
     }
 
     private static int helper(int[] cost, int index) {
-        if (index >= cost.length)
+        if (index == cost.length)
             return 0;
 
         int oneStep = cost[index] + helper(cost, index + 1);
-        int twoStep = cost[index] + helper(cost, index + 2);
 
-        return Math.min(oneStep, twoStep);
+        if ((index + 2) <= cost.length)
+            return Math.min(oneStep, cost[index] + helper(cost, index + 2));
+
+        return oneStep;
     }
 }
