@@ -6,7 +6,10 @@ public class ClimbStairs_Memoization {
             int[] dp = new int[cost.length];
             Arrays.fill(dp, -1);
 
-            return Math.min(helper(cost, 0, dp) , helper(cost, 1, dp));
+            if (cost.length == 1)
+                return cost[0];
+            else
+                return Math.min(helper(cost, 0, dp) , helper(cost, 1, dp));
         }
 
         private static int helper(int[] cost, int index, int[] dp) {
