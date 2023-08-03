@@ -8,11 +8,13 @@ public class HouseRobber_Memoization {
 
         int[] dp_temp1 = new int[money.length];
         int[] dp_temp2 = new int[money.length];
+        
         Arrays.fill(dp_temp1, -1);
         Arrays.fill(dp_temp2, -1);
 
         int ans1 = helper(money, 0, money.length-1, dp_temp1);
         int ans2 = helper(money, 1, money.length, dp_temp2);
+        
         return Math.max(ans1, ans2);
     }
 
