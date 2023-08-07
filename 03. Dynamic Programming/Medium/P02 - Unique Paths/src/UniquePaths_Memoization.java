@@ -13,8 +13,10 @@ public class UniquePaths_Memoization {
     }
 
     private static int helper(int rowIdx, int colIdx, int[][] dp) {
-        if (rowIdx == 0 && colIdx == 0) return 1;
-        else if (rowIdx < 0 || colIdx < 0) return 0;
+        if (rowIdx == 0 && colIdx == 0) 
+            return 1;
+        else if (rowIdx < 0 || colIdx < 0) 
+            return 0;
 
         if (dp[rowIdx][colIdx] != -1) return dp[rowIdx][colIdx];
 
