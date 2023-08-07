@@ -22,11 +22,8 @@ public class UniquePaths_Tabulation {
                 else {
                     int up = 0, left = 0;
 
-                    if (row > 0)
-                        up = dp[row-1][col];
-
-                    if (col > 0)
-                        left = dp[row][col-1];
+                    if (row > 0) up = dp[row-1][col];
+                    if (col > 0) left = dp[row][col-1];
 
                     dp[row][col] = up + left;
                 }
