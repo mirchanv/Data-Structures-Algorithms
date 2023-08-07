@@ -1,5 +1,7 @@
 public class UniquePaths_Recursion {
 
+    // Time Complexity  : 2^mxn
+    // Space Complexity : O(m-1) + O(n-1) for recursion stack space
     public static int uniquePaths(int m, int n) {
         return helper(m-1, n-1);
     }

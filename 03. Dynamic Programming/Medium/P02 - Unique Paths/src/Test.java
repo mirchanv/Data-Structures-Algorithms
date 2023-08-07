@@ -8,5 +8,8 @@ public class Test {
 
         // solution using memoization
         System.out.println("Total no. of paths = " + UniquePaths_Memoization.uniquePaths(m, n));
+
+        // solution using tabulation
+        System.out.println("Total no. of paths = " + UniquePaths_Tabulation.uniquePaths(m, n));
     }
 }

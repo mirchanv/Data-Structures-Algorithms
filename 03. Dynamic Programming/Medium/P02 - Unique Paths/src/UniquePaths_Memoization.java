@@ -2,6 +2,8 @@ import java.util.Arrays;
 
 public class UniquePaths_Memoization {
 
+    // Time Complexity  : O(mxn1)
+    // Space Complexity : O(m-1) + O(n-1) for recursion stack space + O(mxn) dp array
     public static int uniquePaths(int m, int n) {
         int[][] dp = new int[m][n];
 
@@ -13,9 +15,9 @@ public class UniquePaths_Memoization {
     }
 
     private static int helper(int rowIdx, int colIdx, int[][] dp) {
-        if (rowIdx == 0 && colIdx == 0) 
+        if (rowIdx == 0 && colIdx == 0)
             return 1;
-        else if (rowIdx < 0 || colIdx < 0) 
+        else if (rowIdx < 0 || colIdx < 0)
             return 0;
 
         if (dp[rowIdx][colIdx] != -1) return dp[rowIdx][colIdx];
