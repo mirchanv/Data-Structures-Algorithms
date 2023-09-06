@@ -2,36 +2,31 @@ import java.util.Arrays;
 
 public class Matrix_Memoization {
 
-    public static int getMaxPathSum(int[][] grid) {
-        int[][] dp = new int[grid.length][grid[0].length];
-        for (int[] arr : dp) {
-            Arrays.fill(arr, -1);
+    public static int getMaxPathSum(int[][] matrix) {
+        int maxi = Integer.MIN_VALUE;
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+
+        int[][] dp = new int[rows][cols];
+        for (int[] arr : dp) Arrays.fill(arr, -1);
+
+        for (int col=0; col<matrix[0].length; col++) {
+            int ans = helper(matrix, matrix.length-1, col, dp);
+            maxi = Math.max(maxi,ans);
         }
-        return helper(grid, 0, 0, dp);
+        return maxi;
     }
 
-    private static int helper(int[][] grid, int rowIdx, int colIdx, int[][] dp) {
-        if (rowIdx < 0 || colIdx < 0 || colIdx == grid[rowIdx].length) return Integer.MIN_VALUE;
-        else if (rowIdx == grid.length - 1) return grid[rowIdx][colIdx];
+    private static int helper(int[][] matrix, int rowId, int colId, int[][] dp) {
+        if (colId < 0 || colId == matrix[rowId].length) return Integer.MIN_VALUE;
+        else if (rowId == 0) return matrix[0][colId];
 
-        if (dp[rowIdx][colIdx] != -1) return dp[rowIdx][colIdx];
+        if (dp[rowId][colId] != -1) return dp[rowId][colId];
 
-        int down, downLeft, downRight;
-        int maxPathSum = Integer.MIN_VALUE;
+        int up = helper(matrix, rowId-1, colId, dp);
+        int upLeft = helper(matrix, rowId-1, colId-1, dp);
+        int upRight = helper(matrix, rowId-1, colId+1, dp);
 
-        if (rowIdx == 0) {
-            for (int i = 0; i < grid[0].length; i++) {
-                down = helper(grid, rowIdx + 1, i, dp);
-                downLeft = helper(grid, rowIdx + 1, i - 1, dp);
-                downRight = helper(grid, rowIdx + 1, i + 1, dp);
-                dp[rowIdx][i] = maxPathSum = Math.max(maxPathSum, grid[rowIdx][i] + Math.max(down, Math.max(downLeft, downRight)));
-            }
-            return maxPathSum;
-        }
-
-        down = helper(grid, rowIdx + 1, colIdx, dp);
-        downLeft = helper(grid, rowIdx + 1, colIdx - 1, dp);
-        downRight = helper(grid, rowIdx + 1, colIdx + 1, dp);
-        return dp[rowIdx][colIdx] = grid[rowIdx][colIdx] + Math.max(down, Math.max(downLeft, downRight));
+        return dp[rowId][colId] = matrix[rowId][colId] + Math.max(up, Math.max(upLeft, upRight));
     }
 }

@@ -10,6 +10,10 @@ public class Test {
 
         // Solution using memoization
         System.out.println("Max Path Sum = " + Matrix_Memoization.getMaxPathSum(grid1));
-        System.out.println("Max Path Sum = " + Matrix_Memoization.getMaxPathSum(grid2));
+        System.out.println("Max Path Sum = " + Matrix_Memoization.getMaxPathSum(grid2) + "\n");
+
+        // Solution using tabulation
+        System.out.println("Max Path Sum = " + Matrix_Tabulation.getMaxPathSum(grid1));
+        System.out.println("Max Path Sum = " + Matrix_Tabulation.getMaxPathSum(grid2));
     }
 }
