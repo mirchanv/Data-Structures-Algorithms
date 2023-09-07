@@ -11,20 +11,21 @@ public class Subset_Tabulation {
     }
 
     private static boolean helper(int[] arr, int index, int k, boolean[][] dp) {
-        for (int i = 0; i < arr.length; i++)
+        for (int i = 0; i < arr.length; i++) 
             dp[i][0] = true;
 
-        if (arr[index] <= k)
+        if (arr[0] <= k) 
             dp[0][arr[0]] = true;
 
-        for (int idx = 1; idx < arr.length; idx++) {
+        for (int i = 1; i < arr.length; i++) {
             for (int target = 1; target <= k; target++) {
+                boolean notPick = dp[i-1][target];
                 boolean pick = false;
-                if (arr[idx] <= target)
-                    pick = dp[idx-1][target-arr[idx]];
-
-                boolean notPick = dp[idx-1][target];
-                dp[idx][target] = pick || notPick;
+                
+                if (arr[i] <= target) 
+                    pick = dp[i-1][target-arr[i]];
+                
+                dp[i][target] = notPick || pick;
             }
         }
         return dp[arr.length-1][k];
