@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Solution_Tabulation {
 
     public static int lcs(String s, String t) {
